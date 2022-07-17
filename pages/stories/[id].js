@@ -107,8 +107,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    console.info("params", params)
-
     const story = await getItem(params.id);
     const comments = await getAllComments(0, story);
 
