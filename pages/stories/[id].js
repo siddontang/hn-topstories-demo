@@ -70,6 +70,7 @@ export async function getStaticProps({ params }) {
         props: {
             story,
             comments,
-        }
+        },
+        revalidate: 10,
     }
 }
